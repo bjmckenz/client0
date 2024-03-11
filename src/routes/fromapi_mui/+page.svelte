@@ -7,6 +7,9 @@
 <h1>Fetched from API, Displayed with Material UI</h1>
 
 <a href="https://sveltematerialui.com/demo/data-table/">Svelte Material UI Data Table info</a>
+<p>Be sure to read how to install SMUI, specifically that
+	you must run "npm run prepare" after you add SMUI themes.</p>
+
 <hr/>
 <DataTable stickyHeader table$aria-label="Containers" style="width: 100%;">
 	<Head>
