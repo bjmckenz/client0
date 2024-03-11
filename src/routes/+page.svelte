@@ -1,34 +1,22 @@
 <script>
-    export let containers = [];
-
-    function showContainers() {
-        containers = [
-            { id: 1, name: 'Container 1' },
-            { id: 2, name: 'Container 2' },
-        ] ;
-    }
+    import { goto } from '$app/navigation';
 </script>
 
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>Welcome to simple Client/API site</h1>
+<p>Bits and pieces to get started in Svelte and API</p>
 
-<button on:click="{showContainers}">Show Containers</button>
+<p>Step 1: Understand how this route works.</p>
+<button on:click={() => {goto('/fromstatic')}}>Show hard-coded Containers</button>
 
-{#each containers as container}
-    <div>
-        <span class="id">{container.id}</span>
-        <span class="name">{container.name}</span></div>
-{/each}
+<p>Step 2: Display data from an API</p>
+<button on:click={() => {goto('/fromapi')}}>Show Containers via API</button>
 
-<a href="/fromapi">Fetch from API</a>
+<p>Step 3: Set up site-wide layout</p>
+<p class=note>(go look at +layout.svelte)</p>
 
 <style>
-    .id {
-        margin-right: 10px;
-        font-weight: bold;
-    }
-    .name {
-        color: #999;
+    .note {
+        font-style: italic;
     }
 </style>
