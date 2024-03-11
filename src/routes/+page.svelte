@@ -15,6 +15,9 @@
 <p>Step 3: Set up site-wide layout</p>
 <p class=note>(go look at +layout.svelte)</p>
 
+<p>Step 4: Use Svelte MUI to display data</p>
+<button on:click={() => {goto('/fromapi_mui')}}>Show Containers in nice table</button>
+
 <style>
     .note {
         font-style: italic;
