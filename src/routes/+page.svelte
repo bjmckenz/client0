@@ -18,6 +18,10 @@
 <p>Step 4: Use Svelte MUI to display data</p>
 <button on:click={() => {goto('/fromapi_mui')}}>Show Containers in nice table</button>
 
+<p>Step 5: Use a "form" to collect user data and make an API request</p>
+<button on:click={() => {goto('/fetchContainer')}}>Fetch A Container</button>
+
+
 <style>
     .note {
         font-style: italic;
