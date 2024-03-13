@@ -21,6 +21,9 @@
 <p>Step 5: Use a "form" to collect user data and make an API request</p>
 <button on:click={() => {goto('/fetchContainer')}}>Fetch A Container</button>
 
+<p>Step 6: See how to collect data and make a POST request</p>
+<button on:click={() => {goto('/createContainer')}}>Create A Container</button>
+
 
 <style>
     .note {
