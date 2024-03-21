@@ -25,6 +25,12 @@
 <button on:click={() => {goto('/createContainer')}}>Create A Container</button>
 
 
+<p>Step 7: See how to use a SQLITE3 database</p>
+<span class=note>(For this to work, you MUST create a file called .env at the project root, and it must have the following line in it: "DB_FILE=./data/containers.db")</span>
+<br/>
+<button on:click={() => {goto('/fromDB')}}>Use Database</button>
+
+
 <style>
     .note {
         font-style: italic;
