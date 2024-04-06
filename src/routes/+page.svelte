@@ -31,6 +31,12 @@
 <button on:click={() => {goto('/fromDB')}}>Use Database</button>
 
 
+<p>Step 8: See how to create Svelte components</p>
+<span class=note>(uses db, so create the .env file as above)</span>
+<br/>
+<button on:click={() => {goto('/fromDBandComponents')}}>Use Components</button>
+
+
 <style>
     .note {
         font-style: italic;
