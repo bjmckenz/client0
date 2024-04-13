@@ -19,9 +19,9 @@
 		</Row>
 	</Head>
 	<Body>
-		{#each data.containers as container (container.id)}
+		{#each data.containers as container (container.containerNumber)}
 			<Row>
-				<Cell>{container.id}</Cell>
+				<Cell>{container.containerNumber}</Cell>
 				<Cell>{container.nameOfShip}</Cell>
 			</Row>
 		{/each}
